@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/system_file.xsd">
+    <system>
+        <section id="general">
+            <group id="weather_api_key_group" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Weather Api Key</label>
+                <field id="weather_api_key" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Weather Api Key</label>
+                    <comment>Enter your OpenWeatherMap API Key</comment>
+                </field>
+                <field id="weather_api_location" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Weather Api Location</label>
+                    <comment>Enter your OpenWeatherMap API Location</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

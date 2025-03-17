@@ -1,0 +1,23 @@
+{
+    "name": "ab/weatherapi",
+    "version": "1.0.0",
+    "type": "magento2-module",
+    "description": "Magento 2 module to fetch weather data from external API",
+    "author": "artur.borkowski.fullstack@gmail.com",
+    "require": {
+        "php": "^7.4|^8.1",
+        "magento/framework": "103.0.*",
+        "magento/module-backend": "103.0.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "AB\\WeatherApi\\": "app/code/AB/WeatherApi"
+        }
+    }
+}

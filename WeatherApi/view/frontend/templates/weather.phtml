@@ -1,0 +1,17 @@
+<?php
+
+use AB\WeatherApi\Block\WeatherApi;
+
+/** @var WeatherApi $block */
+$weatherData = $block->getWeather();
+?>
+
+<?php if ($weatherData): ?>
+    <div class="weather-widget">
+        <h3>Weather in <?= $weatherData['name'] ?></h3>
+        <p>Temperature: <?= $weatherData['main']['temp'] ?>°C</p>
+        <p>Condition: <?= $weatherData['weather'][0]['description'] ?></p>
+    </div>
+<?php else: ?>
+    <p>Weather temporarily unavailable</p>
+<?php endif; ?>
